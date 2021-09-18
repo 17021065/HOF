@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>High-Order Function</title>
+</head>
+<style>
+    .container {
+        margin: 0;
+        padding-left: 30px;
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+    .resultHolder, .errorHolder {
+        margin-top: 30px;
+    }
+    .resultHolder label, .errorHolder label {
+        color: red;
+        font-weight: bold;
+    }
+    .errorHolder {
+        height: 80px;
+    }
+    p {
+        display: inline-block;
+        margin: 0;
+        vertical-align: top;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>High-Order Function</h1>
+        <br>
+        <div>
+            <h2>Currying</h2>
+            <div>
+                <label for="stock">Stock ID:</label><input type="text" id="stock" name="stock">
+            </div>
+            <div>
+                <label for="warehouse">Warehouse ID:</label><input type="text" id="warehouse" name="warehouse">
+            </div>
+            <div>
+                <label for="amount">Stock deduct:</label><input type="number" id="amount" name="amount">
+            </div>
+            <br>
+            <button type="button" id="deductBtn">Deduct</button>
+            <br>
+            <br>
+            <div class="resultHolder">
+                <label for="result">RESULT:</label><p id="result"></p>
+            </div>
+            <div class="errorHolder">
+                <label for="error">ERROR:</label><p id="error"></p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2>Closure</h2>
+            <br>
+            <div>
+                <button type="button" id="incre">Increase</button>
+                <button type="button" style="margin-left:15px" id="reset">Reset</button>
+                <button type="button" style="margin-left:15px" id="hack">Hack</button>
+                <div class="resultHolder">
+                    <label for="count">RESULT:</label><p id="count">0</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+<script src="example.js"></script>
+</html>
